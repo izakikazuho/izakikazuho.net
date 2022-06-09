@@ -1,0 +1,35 @@
+---
+import NoteSection from '../model/NoteSection.svelte';
+---
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<title>izakikazuho.net - An INFP-t person in Nerima, Tokyo.</title>
+	</head>
+	<body class="text-purple-700 flex flex-col min-h-screen">
+    <header>
+      <div class="w-full p-4">
+        <h1 class="text-5xl font-semibold leading-none">izakikazuho.net</h1>
+        <p class="mt-2">An INFP-t person in Nerima, Tokyo.</p>
+      </div>
+    </header>
+    <main class="container p-4">
+      <NoteSection client:load></NoteSection>
+    </main>
+    <footer class="mt-auto">
+      <p class="p-4">
+        <small>2022 izakikazuho.</small>
+      </p>
+    </footer>
+	</body>
+</html>
+
+<style lang="scss">
+  :root {
+    font-family: 'Overpass', serif;
+  }
+</style>
